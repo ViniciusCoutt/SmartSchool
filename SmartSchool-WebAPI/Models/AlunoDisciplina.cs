@@ -1,0 +1,19 @@
+namespace SmartSchool_WebAPI.Models
+{
+    public class AlunoDisciplina
+    {
+
+        public int AlunoId { get; set; }
+        public Aluno Aluno { get; set; }
+        public int DisciplinaId { get; set; }
+        public Disciplina Disciplina { get; set; }
+
+        public AlunoDisciplina() { }
+
+        public AlunoDisciplina(int alunoId, Aluno aluno, int disciplinaId, Disciplina disciplina)
+        {
+            AlunoId = alunoId;
+            DisciplinaId = disciplinaId;
+        }
+    }
+}
